@@ -1,25 +1,29 @@
-<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./reset.css">
+        <link rel="stylesheet" href="./style.css">
         <title>Primeira page em HTML/CSS</title>
     </head>
     <body>
-        <header>
+        <header class="header">
             <nav>
-                <ul>
-                    <li>
+                <ul class="list">
+                    <li class="list__item">
                         <a href="#" title="Notícias">Notícias</a>
                     </li>
-                    <li>
+                    <li class="list__item">
                         <a href="#" title="Programação">Programação</a>
                     </li>
-                    <li>
+                    <li class="list__item">
                         <a href="#" title="Linguagens">Linguagens</a>
                     </li>
-                    <li>
+                    <li class="list__item">
                         <a href="#" title="Curiosidades">Curiosidades</a>
                     </li>
                 </ul>
@@ -27,36 +31,34 @@
         </header>
         <main>
             <form>
-                <input type="text" />
-                <button>Pesquisar</button>
+                <input class="input_pesquisar" placeholder="Pesquisar por..." type="text" />
+                <button class="btn_pesquisar">Pesquisar</button>
             </form>
             <article>
-                <img src="#" alt="Notebook aberto com código na tela e uma caneca de café" />
+                <img src="./img/articleMain.png" alt="Notebook aberto com código na tela e uma caneca de café" />
                 <h1>Primeira aula sobre HTML e CSS, como aprender de forma mais eficiente</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus natus harum officiis similique eveniet deleniti nihil a. Ullam ut consequuntur explicabo voluptatibus temporibus praesentium dolorum in, magnam enim nisi iure? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus natus harum officiis similique eveniet deleniti nihil a. Ullam ut consequuntur explicabo voluptatibus temporibus praesentium dolorum in, magnam enim nisi iure? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus natus harum officiis similique eveniet deleniti nihil a. Ullam ut consequuntur explicabo voluptatibus temporibus praesentium dolorum in, magnam enim nisi iure?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus natus harum officiis similique eveniet deleniti nihil a. Ullam ut consequuntur explicabo voluptatibus temporibus praesentium dolorum in, magnam enim nisi iure?</p>
-                <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus natus harum officiis similique eveniet deleniti nihil a. Ullam ut consequuntur explicabo voluptatibus temporibus praesentium dolorum in, magnam enim nisi iure?Lorem ipsum dolor sit amet, consectetur adipisicing elit.“</p>
+                <p class="paragrafo_italico">“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus natus harum officiis similique eveniet deleniti nihil a. Ullam ut consequuntur explicabo voluptatibus temporibus praesentium dolorum in, magnam enim nisi iure?Lorem ipsum dolor sit amet, consectetur adipisicing elit.“</p>
             </article>
         </main>
         <footer>
-            <section>
-                <img src="#" alt="Tag de html fechada">
+            <section class="sub-artigos">
+                <img src="img/lastArticle1.svg" alt="Tag de html fechada">
                 <h3>CSS - Quais as melhores formas de acessar elementos</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus natus harum officiis similique eveniet deleniti nihil a.</p>
                 <a href="#" title="Ler notícia">Ler notícia</a>
             </section>
-            <section>
-                <img src="#" alt="Ícone do Figma">
+            <section class="sub-artigos">
+                <img src="img/lastArticle2.svg" alt="Ícone do Figma">
                 <h3>Figma - Quando e como utilizar ao seu favor no dia dia como dev</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus natus harum officiis similique eveniet deleniti nihil a.</p>
                 <a href="#" title="Ler notícia">Ler notícia</a>
             </section>
-            <section>
-                <a href="#" title="Ler notícia completa">
-                    <img src="#" alt="Tela de computador com código aberto">
-                    <h3>Editores de Código -  Como escolher um bom editor</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus natus harum officiis similique eveniet deleniti nihil a.</p>
-                    <span>Ler notícia</span>
-                </a>
+            <section class="sub-artigos">
+                <img src="img/lastArticle3.svg" alt="Tela de computador com código aberto">
+                <h3>Editores de Código -  Como escolher um bom editor</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus natus harum officiis similique eveniet deleniti nihil a.</p>
+                <a href="#" title="Ler notícia">Ler notícia</a>
             </section>
         </footer>
     </body>

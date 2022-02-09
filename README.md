@@ -11,5 +11,15 @@ git pull origin <nome-da-branch>
 git push origin <nome-da-branch>
 *git push origin html
 
-# criar um commit de arquivos
+# adicionar arquivos no commit 
+git add . *adicionar todos os arquivos*
+git add <nome-do-arquivo>
 
+# fechar a caixa e colocar o nome da etiqueta
+git commmit -m "nome-do-commit"
+*git commit -m "Finalizando layout html/css"
+
+
+# criar uma branch local -> espelho do código contido na brach principal
+git checkout -b <nome-da-branch>
+*git checkout -b html

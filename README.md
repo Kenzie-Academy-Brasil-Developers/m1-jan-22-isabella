@@ -1,1 +1,15 @@
-# m1-jan-22-isabella
+# REPOSITORIOS REMOTOS
+
+# criar uma copia do repositorio remoto -> 
+git clone <cominho-ssh-do-repo>
+
+# puxar os códigos atuais do repo remoto
+git pull origin <nome-da-branch>
+*git pull origin html
+
+# enviar os códigos pro repo remoto
+git push origin <nome-da-branch>
+*git push origin html
+
+# criar um commit de arquivos
+

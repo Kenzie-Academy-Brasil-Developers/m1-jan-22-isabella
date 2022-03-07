@@ -233,3 +233,10 @@ padding-left
 
 IGUAL para o uso do  MARGIN
 */
+
+.enviar{
+    background-color: pink;
+    color:green;
+    font-size: 14px;
+    border: 0px;    
+}

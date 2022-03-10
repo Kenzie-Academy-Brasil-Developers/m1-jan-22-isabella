@@ -23,8 +23,12 @@ function newItem(){
 
     //crio os elementos html
     const itemList = document.createElement("li");
-    const textItem = document.createElement("span");
+    const textItem = document.createElement("label");
     const checkItem = document.createElement("input");
+    const removeItem = document.createElement("button");
+    removeItem.innerText = "x";
+    removeItem.classList.add('removeItem');
+
     //defino o type do input
     checkItem.type = "checkbox";
 
@@ -33,8 +37,9 @@ function newItem(){
     textItem.innerText = nameValue;
 
     //adiciona filhos da li
-    itemList.appendChild(textItem);
     itemList.appendChild(checkItem);
+    itemList.appendChild(textItem);
+    itemList.appendChild(removeItem);
 
     //adiciona item na ul
     parentList.appendChild(itemList);
@@ -43,9 +48,45 @@ function newItem(){
     toDoList.push(nameValue);
 }
 
-//FUNÇÃO QUE CHECKED NO ITEM DA LISTA
-//FUNÇÃO QUE EXCLUI O ITEM DA LISTA
+//IDENTIFICA O ELEMENTO CLICADO
+function identificaItem(event){
+    const itemClick = event.target;
 
+    // - Identificar o click na tag input
+    if(itemClick.tagName === 'INPUT'){
+        checkedItem(itemClick);
+    }
+
+    // - Identificar o click na tag button
+    if(itemClick.tagName === 'BUTTON'){
+        removeItem(itemClick);
+    }
+}
+
+//FUNÇÃO QUE CHECKED NO ITEM DA LISTA => .checked-item
+function checkedItem(input){
+    input.parentNode.classList.toggle('checked-item');
+}
+
+//FUNÇÃO QUE EXCLUI O ITEM DA LISTA
+function removeItem(button){
+    button.parentElement.remove();
+
+    console.log(toDoList);
+
+    /**
+     * 1. Encontrar o LABEL que corresponde ao button clicado
+     * 2. Pegar somente o texto do LABEL
+     * 3. Encontrar no array esse elemento (Texto do LABEL)
+     * 4. Excluir do array somente esse elemento 
+     * 
+     * *** indexOf
+     * *** slice
+     */
+}
 
 //CHAMANDO A FUNÇÃO
 buttonAdd.addEventListener('click', newItem);
+
+//Chama a função de identificação de item
+parentList.addEventListener('click', identificaItem);

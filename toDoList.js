@@ -70,19 +70,19 @@ function checkedItem(input){
 
 //FUNÇÃO QUE EXCLUI O ITEM DA LISTA
 function removeItem(button){
+    const textButton = button.parentElement.children[1].textContent;
+    /**let indexItem = 0;
+    for (let i = 0; i< toDoList.length; i++){
+        if(toDoList[i] === textButton){
+            indexItem = i;
+        }
+    }
+    */
+    const indexItem = toDoList.indexOf(textButton);
+    toDoList.splice(indexItem,1);
+
     button.parentElement.remove();
 
-    console.log(toDoList);
-
-    /**
-     * 1. Encontrar o LABEL que corresponde ao button clicado
-     * 2. Pegar somente o texto do LABEL
-     * 3. Encontrar no array esse elemento (Texto do LABEL)
-     * 4. Excluir do array somente esse elemento 
-     * 
-     * *** indexOf
-     * *** slice
-     */
 }
 
 //CHAMANDO A FUNÇÃO

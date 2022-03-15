@@ -79,3 +79,19 @@ body {
     font-size: 12px;
     padding: 2px;
 }
+.other-posts-item img {
+    width: 70px;
+    height: 58px;
+    border-radius: 8px;
+}
+.other-posts-item h3 {
+    font-weight: 700; 
+    font-size: 14px;
+    color: #0D0D0E;   
+}
+.other-posts h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #0D0D0E;
+    margin: 10px 0;
+}

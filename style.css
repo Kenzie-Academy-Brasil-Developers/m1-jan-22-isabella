@@ -30,6 +30,10 @@ body {
     font-weight: 500;
 }
 
+.find-area {
+    padding-top: 10px;
+}
+
 .find-area input {
     background: #F3F4F5;
     border: none;
@@ -79,9 +83,16 @@ body {
     font-size: 12px;
     padding: 2px;
 }
+.post-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .other-posts-item img {
-    width: 70px;
-    height: 58px;
+    max-width: 70px;
+    max-height: 58px;
     border-radius: 8px;
 }
 .other-posts-item h3 {
@@ -91,7 +102,17 @@ body {
 }
 .other-posts h2 {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: bold;
     color: #0D0D0E;
-    margin: 10px 0;
+    margin: 35px 0;
+}
+.other-posts-item {
+    display: flex;
+    width: 298px;
+    align-items: start;
+    padding: 10px 0;
+}
+.other-posts-item h3 {
+    padding-top: 5px;
+    margin-left: 10px;
 }

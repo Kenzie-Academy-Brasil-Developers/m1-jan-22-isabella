@@ -28,6 +28,7 @@ body {
     border: 1px solid #878B96;
     border-radius: 10px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .find-area {
@@ -115,4 +116,8 @@ body {
 .other-posts-item h3 {
     padding-top: 5px;
     margin-left: 10px;
+}
+.active {
+    background: #000000;
+    color: #ffffff;
 }

@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&family=Roboto&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
     <title>Noticias</title>
 </head>
 <body>
@@ -19,7 +19,7 @@
     </header>
     <!------------Barra de navegação-------------->
     <section class="itens-navbar">
-        <nav class="navbar"> 
+        <nav class="navbar">
             <ul id="listNav">
                 <li data-tag="Todos" class="item-nav active">Todos</li>
                 <li data-tag="Curiosidades" class="item-nav">Curiosidades</li>
@@ -30,7 +30,7 @@
         </nav>
         <div class="find-area">
             <input id="inputFind" type="text" name="" placeholder="Pesquisar por...">
-            <button id="btnFind" class="btn-find">P</button>
+            <button id="btnFind" class="btn-find"><img src="./src/img/icons/search.png" alt=""></button>
         </div>
     </section>
     <!------------Conteúdo principal-------------->
@@ -38,7 +38,7 @@
         <section class="post-container">
             <ul class="post-list">
                 <li class="post-item">
-                    <img src="./img/isa.jpg" alt="">
+                    <img src="./src/img/isa.jpg" alt="">
                     <h2>Como utilizar CSS da melhor forma em 2021</h2>
                     <p>Transforme-se em especialista em UI Design e dê um Boost na sua carreira</p>
                     <span>Entretenimento</span>
@@ -53,15 +53,15 @@
                 <h2>Recents Posts</h2>
                 <ul class="other-posts-list">
                     <li class="other-posts-item">
-                        <img src="./img/nicholas.jpg" alt="">
+                        <img src="./src/img/nicholas.jpg" alt="">
                         <h3>Como manter a consistência nos estudos</h3>
                     </li>
                     <li class="other-posts-item">
-                        <img src="./img/lorena.jpg" alt="">
+                        <img src="./src/img/lorena.jpg" alt="">
                         <h3>Home Office - será esse o futuro de todas empresas?</h3>
                     </li>
                     <li class="other-posts-item">
-                        <img src="./img/rodrigo.jpg" alt="">
+                        <img src="./src/img/rodrigo.jpg" alt="">
                         <h3>Como manter o ambiente de estudos organizado e agra...</h3>
                     </li>
                 </ul>
@@ -70,21 +70,23 @@
                 <h2>Popular Posts</h2>
                 <ul>
                     <li class="other-posts-item">
-                        <img src="./img/andre.jpg" alt="">
+                        <img src="./src/img/andre.jpg" alt="">
                         <h3>Bancos de imagens gratuítos para utilizar em seus projet... </h3>
                     </li>
                     <li class="other-posts-item">
-                        <img src="./img/isa.jpg" alt="">
+                        <img src="./src/img/isa.jpg" alt="">
                         <h3>O que considerar na hora de comprar um pc novo</h3>
                     </li>
                     <li class="other-posts-item">
-                        <img src="./img/nicole.jpg" alt="">
+                        <img src="./src/img/nicole.jpg" alt="">
                         <h3>Qual a diferença entre UI Design e Front end</h3>
                     </li>
                 </ul>
             </div>
         </section>
     </main>
-    <script src="script.js"></script>
+    <script src="./src/js/database.js"></script>
+    <script src="./src/js/script.js"></script>
+    <script src="./src/js/filter.js"></script>
 </body>
 </html>
